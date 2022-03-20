@@ -1,0 +1,12 @@
+﻿{
+ "id": "Raid.Toolkit.Extension.Test",
+ "type": "TestRaidExtension.TestExtension",
+ "displayName": "Test Extension",
+ "description": "Displays the current topmost view",
+ "codegen": {
+  "types": [
+   "^Client\\.RaidApp\\.RaidApplication$",
+   "^Client\\.RaidApp\\.RaidViewMaster$"
+  ]
+ }
+}

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0-windows7.0</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<AssemblyName>Raid.Toolkit.Extension.Test</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove=".rtk.extension.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Raid.Common" Version="1.7.14-alpha" />
+		<PackageReference Include="Raid.Toolkit.DataModel" Version="1.7.14-alpha" />
+		<PackageReference Include="Raid.Toolkit.Extensibility" Version="1.7.14-alpha" />
+		<PackageReference Include="Raid.Toolkit.Extensibility.Tasks" Version="1.7.14-alpha">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<RTKExtensionManifest Include=".rtk.extension.json" />
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command="xcopy /Y $(OutputPath)\ &quot;%25UserProfile%25\AppData\Local\RaidToolkit\Extensions\&quot;" />
+	</Target>
+
+</Project>
