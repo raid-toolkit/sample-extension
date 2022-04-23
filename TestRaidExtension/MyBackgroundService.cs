@@ -1,10 +1,10 @@
-﻿using Client.App;
-using Client.RaidApp;
-using Client.ViewModel.DTO;
-using Raid.Toolkit.Extensibility;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Raid.Toolkit.Extensibility;
+using Client.App;
+using Client.RaidApp;
+using Client.ViewModel.DTO;
 
 namespace TestRaidExtension
 {

@@ -1,6 +1,7 @@
 ﻿{
  "id": "Raid.Toolkit.Extension.Test",
- "type": "TestRaidExtension.TestExtension",
+ "type": "TestRaidExtension.MyExtension",
+ "asm": "TestRaidExtension.dll",
  "displayName": "Test Extension",
  "description": "Displays the current topmost view",
  "codegen": {

@@ -28,10 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyExtensionUI));
 			this.currentViewLabel = new System.Windows.Forms.Label();
-			this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
 			this.SuspendLayout();
 			// 
 			// currentViewLabel
@@ -43,12 +40,6 @@
 			this.currentViewLabel.Size = new System.Drawing.Size(264, 45);
 			this.currentViewLabel.TabIndex = 0;
 			this.currentViewLabel.Text = "currentViewLabel";
-			// 
-			// notifyIcon1
-			// 
-			this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-			this.notifyIcon1.Text = "MyExtension";
-			this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
 			// 
 			// MyExtensionUI
 			// 
@@ -66,6 +57,5 @@
 		#endregion
 
 		private System.Windows.Forms.Label currentViewLabel;
-		private System.Windows.Forms.NotifyIcon notifyIcon1;
 	}
 }
